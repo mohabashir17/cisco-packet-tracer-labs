@@ -1,8 +1,8 @@
 # Cisco Packet Tracer Labs (CCNA)
 
-This repository contains my Cisco Packet Tracer practice labs created while studying for the CCNA.
+This repository contains my Cisco Packet Tracer practice labs completed using Jeremy’s IT Lab and other learning resources while studying for the CCNA.
 Each lab includes the Packet Tracer file, topology screenshots, verification outputs,
-and clear explanations to demonstrate my understanding of networking concepts.
+and explanations to demonstrate my understanding of networking concepts.
 
 ---
 
