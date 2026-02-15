@@ -18,27 +18,36 @@ In this lab:
 - Connectivity tested between VLANs and to the Internet (1.1.1.1)
 
 Rules used:
-* Last usable IP → Assigned to each SVI
-* Default route → Points to R1 G0/0
+* Last usable IP → Assigned to each SVI  
+* Default route → Points to R1 G0/0  
 
 ---
 
 ## Approach
 Steps followed:
 
-1. Remove router-on-a-stick configuration  
-2. Configure Layer 3 point-to-point link between SW2 and R1  
-3. Configure default route on SW2 using R1 as next hop  
-4. Create SVIs on SW2 (one per VLAN)  
-5. Assign last usable IP of each subnet to each SVI  
-6. Test inter-VLAN connectivity using ping  
-7. Test Internet connectivity by pinging 1.1.1.1  
+1. Enable Layer 3 routing on multilayer switch  
+
+2. Convert switch port to Layer 3 routed port  
+
+3. Configure Layer 3 point-to-point link between SW2 and R1  
+
+4. Configure default route on SW2 using R1 as next hop  
+
+5. Create SVIs on SW2 (one per VLAN)  
+
+6. Assign last usable IP of each subnet to each SVI  
+
+7. Test inter-VLAN connectivity using ping  
+
+8. Test Internet connectivity by pinging 1.1.1.1  
 
 ---
 
 ## Configuration Summary
-* Configured Layer 3 routed link between SW2 and R1  
-* Configured SVIs for each VLAN on multilayer switch  
+* Enabled routing using `ip routing`  
+* Configured routed port using `no switchport`  
+* Configured SVIs using `interface vlan <vlan-number>`  
 * Configured default route on SW2  
 * Verified inter-VLAN communication  
 * Verified Internet connectivity  
@@ -46,11 +55,12 @@ Steps followed:
 ---
 
 ## What I Understood Overall
-* Multilayer switches can perform routing using SVIs  
-* SVIs act as gateways for VLANs (instead of router subinterfaces)  
-* Layer 3 links between router and switch improve performance  
-* Default route allows internal networks to reach external networks  
-* Layer 3 switching is faster and more scalable than ROAS  
+* Multilayer switches can route using SVIs  
+* `ip routing` enables Layer 3 functionality on switch  
+* `no switchport` converts a Layer 2 port into a Layer 3 routed port  
+* SVIs act as gateways for VLANs  
+* Layer 3 switching is more scalable and faster than router-on-a-stick  
+* Default route allows VLAN networks to reach external networks  
 
 ---
 
