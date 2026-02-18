@@ -7,13 +7,23 @@ and explanations to demonstrate my understanding of networking concepts.
 ---
 
 ## Topics Covered
-- Networking Fundamentals
-- VLANs
-- Trunking
-- Spanning Tree Protocol (STP)
+- Network Fundamentals (OSI model, TCP/IP, cabling, devices)
+- Ethernet & Switching Basics
+- VLANs and Trunking (802.1Q)
+- Spanning Tree Protocol (STP, RSTP basics)
 - EtherChannel
-- Inter-VLAN Routing
-- Static & Dynamic Routing
+- Inter-VLAN Routing (Router-on-a-Stick & Layer 3 Switch)
+- Static Routing
+- Dynamic Routing (Mainly OSPF for CCNA)
+- IPv4 Addressing & Subnetting
+- IPv6 Fundamentals
+- Access Control Lists (Standard & Extended ACLs)
+- Network Services (DHCP, DNS, NTP, SNMP basics)
+- NAT (Static, Dynamic, PAT)
+- Wireless Fundamentals
+- Network Security Fundamentals
+- Automation & Programmability Basics
+- Packet Tracer Labs & Troubleshooting
 
 ---
 
